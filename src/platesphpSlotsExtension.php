@@ -1,3 +1,4 @@
+<?php        
         $templates->loadExtension(new class() implements League\Plates\Extension\ExtensionInterface {
             protected $engine;
             public $template; // must be public
