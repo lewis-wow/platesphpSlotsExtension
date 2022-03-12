@@ -31,3 +31,17 @@ view/index.php
     <?php $this->endcomponent(); ?>
  </body>
 ```
+
+### checking if slot exists
+```
+ <header>
+    <nav>
+        <?php if($slot("nav")): ?>
+           <?= $slot("nav") ?>
+        <?php else: ?>
+           default nav slot
+        <?php endif; ?>
+    </nav>
+    <!-- you don't have to use the default slot -->
+ </header>
+```
