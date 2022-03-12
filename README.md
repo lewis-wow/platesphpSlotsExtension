@@ -23,7 +23,7 @@ components/header.php
 view/index.php
 ```
  <body>
-    <?php $this->component("header"); ?>
+    <?php $this->component("components::header"); ?>
         <?php $this->startSlot("nav"); ?>
             hello, I am in nav element
         <?php $this->stopSlot(); ?>
